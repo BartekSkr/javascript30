@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: url(/01-DrumKit/img/drum.jpg);
+}
+
+.keys {
+  position: absolute;
+  top: 45%;
+  right: 80px;
+}
+
+.keys > .key {
+  height: 80px;
+  width: 80px;
+  border: 3px solid grey;
+  border-radius: 10px;
+  display: block;
+  color: whitesmoke;
+  float: left;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.1s;
+}
+
+.keys > .key > kbd {
+  font-size: 40px;
+  font-weight: bold;
+  display: block;
+}
+
+.keys > .key > .sound {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: yellow;
+}
+
+/* KEYS ANIMATION */
+.playing {
+  transform: scale(1.1);
+  border-color: rgb(252, 252, 0);
+  box-shadow: 0 0 30px rgb(252, 252, 0);
+}
