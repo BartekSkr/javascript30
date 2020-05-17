@@ -40,7 +40,7 @@ body {
 }
 
 /* KEYS ANIMATION */
-.playing {
+.keys > .playing {
   transform: scale(1.1);
   border-color: rgb(252, 252, 0);
   box-shadow: 0 0 30px rgb(252, 252, 0);
