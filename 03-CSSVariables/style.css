@@ -1,0 +1,35 @@
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: rgb(75, 0, 145);
+  color: white;
+}
+
+.container > h2 {
+  font-size: 70px;
+  margin-bottom: var(--spacing);
+}
+
+.container > h2 > .hl {
+  color: var(--base);
+}
+
+.container > .controls {
+  margin-bottom: var(--spacing);
+}
+
+.container > .controls > label {
+  font-size: 40px;
+}
+
+.container > img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
