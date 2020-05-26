@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(244, 248, 0);
+}
+
+.search-form {
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.search-form > .search {
+  width: 120%;
+  height: 50px;
+  margin: 0;
+  position: relative;
+  top: 10px;
+  left: -10%;
+  border: 5px solid whitesmoke;
+  border-radius: 5px;
+  font-size: 30px;
+  text-align: center;
+  outline: hidden;
+  z-index: 2;
+}
+
+.search-form > .suggestions {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.search-form > .suggestions > li {
+  background: white;
+  list-style: none;
+  border-bottom: 1px solid grey;
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.hl {
+  background: orange;
+}
