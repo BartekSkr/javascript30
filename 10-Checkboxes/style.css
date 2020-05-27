@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(28, 236, 0);
+  font-family: sans-serif;
+}
+
+.inbox {
+  max-width: 400px;
+  margin: 50px auto;
+  background: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 6px 6px 0 rgba(202, 202, 202, 0.8);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid grey;
+}
+
+label {
+  margin: 0;
+  padding: 20px;
+  transition: background 0.3s;
+  flex: 1;
+  font-size: 20px;
+  border-left: 1px solid grey;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+input:checked + label {
+  background: rgb(218, 218, 218);
+  text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+  width: 15px;
+  height: 15px;
+}
