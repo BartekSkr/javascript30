@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background: url(/15-LocalStorage/img/pizza.jpg) center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.container {
+  background: whitesmoke;
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  margin: 300px auto;
+  padding: 20px;
+}
+
+.container > h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.container > .plates {
+  text-align: left;
+  list-style: none;
+}
+
+.container > .plates li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  font-weight: 100;
+  display: flex;
+}
+
+.container > .plates > label {
+  flex: 1;
+  cursor: pointer;
+}
+
+.container > .plates input {
+  display: none;
+}
+
+.container > .plates input + label:before {
+  content: "⬜️";
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.container > .add-items > input[type="text"],
+.container > .add-items > input[type="submit"],
+.container > .clear-btn {
+  height: 30px;
+  margin: 10px 2px;
+  border-radius: 0px;
+  border: 1px solid rgb(189, 189, 189);
+  font-weight: bold;
+  outline: none;
+}
+
+.container > .add-items > input[type="text"] {
+  text-indent: 10px;
+}
+
+.container > .add-items > input[type="submit"] {
+  height: 32px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.plates input:checked + label:before {
+  content: "🌮";
+}
+
+.container > .clear-btn {
+  height: 32px;
+  width: 100px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.container > .clear-btn:hover {
+  background-color: rgb(252, 58, 58);
+  color: white;
+}
