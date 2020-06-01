@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      type="text/javascript"
+      src="http://www.cornify.com/js/cornify.js"
+    ></script>
+    <title>Key Sequence Detection</title>
+  </head>
+  <body>
+    <script>
+      const pressed = [];
+      const secredCode = "bartek";
+
+      window.addEventListener("keyup", (e) => {
+        console.log(e.key);
+        pressed.push(e.key);
+        pressed.splice(
+          -secredCode.length - 1,
+          pressed.length - secredCode.length
+        );
+        if (pressed.join("").includes(secredCode)) {
+          console.log("DING! DING! You guessed the secret code!");
+          cornify_add();
+        }
+        console.log(pressed);
+      });
+    </script>
+  </body>
+</html>
