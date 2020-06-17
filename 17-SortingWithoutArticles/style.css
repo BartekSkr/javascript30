@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(yellow, orange);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#bands {
+  background: whitesmoke;
+  width: 400px;
+  margin: auto;
+  padding: 0;
+  font-size: 20px;
+  list-style: inside square;
+}
+
+#bands > li {
+  border-bottom: 1px solid rgb(226, 226, 226);
+  padding: 10px;
+}
+
+#bands > li:last-child {
+  border-bottom: none;
+}
